@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Sushi Bar</title>
+    <link rel="stylesheet" href="stylebootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Ensures footer stays at the bottom */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="homebootstrap.html">Sushi Bar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="homebootstrap.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallerybootstrap.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactusbootstrap.html">Make A Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogbootstrap.html">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Menu</h1>
+        
+        <section>
+            <h2>Main Course</h2> 
+            <ul>
+                <li><strong>Classic Nigiri:</strong> Starting at ₹150 <del>₹200</del></li> 
+                <li><strong>Sashimi Platters:</strong> Starting at ₹250</li> 
+                <li><strong>Signature Rolls:</strong> Starting at ₹200 <sup>*</sup></li> 
+                <li><strong>Vegetarian Delights:</strong> Starting at ₹180 <del>₹200</del></li> 
+                <li><strong>Fusion Specials:</strong> Starting at ₹220 <sup>*</sup></li> 
+                <li><strong>Tempura Udon:</strong> Savory noodle soup with fried vegetables – ₹250</li> 
+                <li><strong>Spicy Tuna Tartare:</strong> Fresh tuna with a spicy twist – ₹300</li> 
+                <li><strong>Vegetable Sushi Platter:</strong> A colorful variety of vegetarian sushi – ₹220</li> 
+                <li><strong>Appetizers:</strong> Starting at ₹120 <del>₹180</del></li> 
+            </ul> 
+            <hr> 
+            
+            <h2>Sides</h2> 
+            <ol>
+                <li><strong>H<sub>2</sub>O:</strong> Refreshing water – complimentary</li> 
+                <li><strong>Soft Drinks:</strong> 
+                    <ul> 
+                        <li>Coca-Cola</li> 
+                        <li>Fanta</li> 
+                        <li>Red Bull</li> 
+                        <li><strong>Mocktails:</strong> 
+                            <ul> 
+                                <li>Margarita</li> 
+                                <li>Pina Colada</li> 
+                                <li>Mojito</li> 
+                            </ul> 
+                        </li> 
+                    </ul> 
+                </li> 
+                <li><strong>Boba Teas:</strong> A variety of flavors – ₹150</li> 
+            </ol>   
+            <hr>
+            
+            <h2>Desserts</h2> 
+            <ul> 
+                <li><strong>Mochi Ice Cream:</strong> Delicious and chewy ice cream – ₹180</li> 
+                <li><strong>Green Tea Cheesecake:</strong> A unique twist on a classic – ₹200</li> 
+                <li><strong>Chocolate Lava Cake:</strong> Rich chocolate with a molten center – ₹250</li> 
+                <li><strong>Fruit Platter:</strong> Seasonal fruits beautifully arranged – ₹150</li> 
+            </ul> 
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Phone: 7704210719</p>
+                <ul class="social-media">
+                    <li><strong>Instagram:</strong> @sushigram</li>
+                    <li><strong>X (formerly Twitter):</strong> @sushispeaks</li>
+                    <li><strong>Snapchat:</strong> @sushispeaks</li>
+                </ul>
+            </div>
+            <div class="coupon-code" onclick="alert('Use the code: {SUSHI20} for 20% off your meal.');">
+                Click here for discount codes!
+            </div>
+        </section>
+    </footer>
+    
+    <script src="javabootstrap.js"></script>
+</body>
+</html>

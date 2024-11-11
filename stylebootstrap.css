@@ -1,0 +1,224 @@
+/* General Variables */
+:root {
+    --paynes-gray: #666a86ff;
+    --slate-gray: #788aa3ff;
+    --cambridge-blue: #92b6b1ff;
+    --celadon: #b2c9abff;
+    --dutch-white: #e8ddb5ff;
+    --lavender-web: #cfcfeaff;
+    --rose-quartz: #a89b9dff;
+    --cinereous: #816c61ff;
+    --ebony: #575a4bff;
+    --dark-text: #2a2c24ff;
+    --primary-color: var(--paynes-gray);
+    --secondary-color: var(--cambridge-blue);
+    --text-color: var(--dutch-white);
+    --highlight-color: var(--celadon);
+    --button-hover-color: var(--slate-gray);
+    --font-family: 'Arial', sans-serif;
+    --footer-background: var(--cinereous);
+    --header-background: var(--paynes-gray);
+    --content-background: var(--lavender-web);
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* General Styling */
+body {
+    background-color: var(--rose-quartz);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    color: var(--dark-text);
+}
+
+/* Header Styling */
+header {
+    background-color: var(--header-background);
+    color: var(--dutch-white);
+    padding: 15px 0;
+    text-align: center;
+}
+
+header a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+header a:hover {
+    color: var(--highlight-color);
+    font-size: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px var(--card-shadow);
+}
+
+.navbar-nav a {
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.navbar-nav a:hover {
+    color: var(--highlight-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid var(--highlight-color);
+}
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Section Titles */
+.section-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+.container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--content-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--card-shadow);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0px 4px 12px var(--card-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-header {
+    background-color: var(--cambridge-blue);
+    color: var(--text-color);
+}
+
+.card-body {
+    background-color: var(--content-background);
+    color: var(--dark-text);
+    padding: 20px;
+}
+
+/* Button Styles */
+button, .btn-primary {
+    background-color: var(--highlight-color);
+    color: var(--dutch-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn-primary:hover {
+    background-color: var(--button-hover-color);
+    color: var(--dutch-white);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: var(--footer-background);
+    color: var(--dark-text);
+    padding: 30px 0;
+    text-align: center;
+    border-top: 5px solid var(--highlight-color);
+}
+
+.footer a {
+    color: var(--dark-text);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: var(--highlight-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--content-background);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px var(--card-shadow);
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: var(--cambridge-blue);
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
